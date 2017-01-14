@@ -13,9 +13,9 @@ particlesJS.load('particles-js', 'particles.json', function() {
 
 particlesJS('particles-js',
  {
-  "particles": {
+"particles": {
     "number": {
-      "value": 100,
+      "value": 160,
       "density": {
         "enable": true,
         "value_area": 800
@@ -41,21 +41,21 @@ particlesJS('particles-js',
     },
     "opacity": {
       "value": 1,
-      "random": false,
+      "random": true,
       "anim": {
-        "enable": false,
+        "enable": true,
         "speed": 1,
-        "opacity_min": 0.1,
+        "opacity_min": 0,
         "sync": false
       }
     },
     "size": {
-      "value": 1,
+      "value": 3,
       "random": true,
       "anim": {
         "enable": false,
-        "speed": 40,
-        "size_min": 0.1,
+        "speed": 4,
+        "size_min": 0.3,
         "sync": false
       }
     },
@@ -68,16 +68,16 @@ particlesJS('particles-js',
     },
     "move": {
       "enable": true,
-      "speed": 3,
-      "direction": "top",
-      "random": false,
+      "speed": 1,
+      "direction": "none",
+      "random": true,
       "straight": false,
-      "out_mode": "bounce",
+      "out_mode": "out",
       "bounce": false,
       "attract": {
-        "enable": true,
+        "enable": false,
         "rotateX": 600,
-        "rotateY": 1200
+        "rotateY": 600
       }
     }
   },
@@ -85,12 +85,12 @@ particlesJS('particles-js',
     "detect_on": "canvas",
     "events": {
       "onhover": {
-        "enable": false,
-        "mode": "repulse"
+        "enable": true,
+        "mode": "bubble"
       },
       "onclick": {
-        "enable": false,
-        "mode": "push"
+        "enable": true,
+        "mode": "repulse"
       },
       "resize": true
     },
@@ -102,14 +102,14 @@ particlesJS('particles-js',
         }
       },
       "bubble": {
-        "distance": 400,
-        "size": 40,
+        "distance": 250,
+        "size": 0,
         "duration": 2,
-        "opacity": 8,
+        "opacity": 0,
         "speed": 3
       },
       "repulse": {
-        "distance": 200,
+        "distance": 400,
         "duration": 0.4
       },
       "push": {
@@ -120,5 +120,5 @@ particlesJS('particles-js',
       }
     }
   },
-	"retina_detect": true
+  "retina_detect": true
 });
